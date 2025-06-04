@@ -9,7 +9,7 @@ useHead({
 <template>
   <NuxtLayout>
     <VApp>
-      <NuxtPage></NuxtPage>
+      <NuxtPage />
     </VApp>
   </NuxtLayout>
 </template>

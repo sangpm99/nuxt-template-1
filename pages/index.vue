@@ -1,8 +1,9 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import HeroBanner from "@/views/pages/home/HeroBanner.vue";
+</script>
 
 <template>
   <div>
-    <h2>Hello</h2>
-    <VBtn>Click me</VBtn>
+    <HeroBanner></HeroBanner>
   </div>
 </template>

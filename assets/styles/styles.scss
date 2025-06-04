@@ -1,0 +1,61 @@
+@use "./font.scss";
+
+:root {
+  --color-primary: 81, 73, 66;
+  --wrap-spacer: 5rem;
+  --header-height: 80px;
+  --footer-height: 500px;
+  --main-height: calc(100vh - 100px - 500px);
+  --min-nav-width: 200px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Philosopher", sans-serif !important;
+}
+
+// 👉 General
+.shadow {
+  box-shadow: 0 2px 1px -1px var(--v-shadow-key-umbra-opacity, rgba(0, 0, 0, 0.2)), 0px 1px 1px 0px var(--v-shadow-key-penumbra-opacity, rgba(0, 0, 0, 0.14)), 0px 1px 3px 0px var(--v-shadow-key-ambient-opacity, rgba(0, 0, 0, 0.12));
+}
+
+.divider,
+.divider-primary {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+}
+
+.divider-primary {
+  background-color: rgb(var(--color-primary));
+}
+
+// 👉 Dimension
+.layout-wrapper,
+.layout-header-navbar {
+  padding-left: var(--wrap-spacer);
+  padding-right: var(--wrap-spacer);
+}
+
+.layout-header-navbar {
+  height: var(--header-height);
+}
+
+.layout-page-content {
+  margin-top: var(--header-height);
+}
+
+// 👉 Font
+.font-normal {
+  font-family: "Philosopher", sans-serif !important;
+}
+
+.font-heading {
+  font-family: "Alumni Sans Pinstripe", sans-serif !important;
+}

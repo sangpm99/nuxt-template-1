@@ -7,6 +7,7 @@ export default defineNuxtConfig({
   build: {
     transpile: ["vuetify"],
   },
+  css: ["@/assets/styles/styles.scss"],
   modules: [
     "@nuxt/content",
     "@nuxt/eslint",

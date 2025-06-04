@@ -1,0 +1,148 @@
+<script setup lang="ts">
+import navItems from "@/navigation/horizontal/index";
+</script>
+
+<template>
+  <div class="layout-header-navbar elevation-1">
+    <VRow no-gutters>
+      <VCol cols="1">
+        <NuxtImg src="/logo.png"></NuxtImg>
+      </VCol>
+      <VCol cols="9" class="d-flex align-center justify-center">
+        <ul class="d-flex" style="list-style-type: none">
+          <li
+            v-for="(navItem, index) in navItems"
+            :key="index"
+            class="position-relative px-3 nav-item"
+          >
+            <div class="d-flex align-center">
+              <span>{{ navItem.title }}</span>
+              <VIcon
+                v-if="navItem.children"
+                icon="ri-arrow-down-s-line"
+                color="primary"
+                size="15"
+              ></VIcon>
+            </div>
+
+            <ul
+              v-if="navItem.children"
+              class="nav-children"
+              style="list-style-type: none"
+            >
+              <VCard>
+                <VCardText class="pa-0">
+                  <li
+                    v-for="(item, index) in navItem.children"
+                    :key="index"
+                    :class="
+                      index !== navItem.children.length - 1
+                        ? 'border-bottom'
+                        : ''
+                    "
+                    class="d-flex align-center"
+                  >
+                    <VIcon icon="ri-arrow-right-s-fill" color="primary"></VIcon>
+                    <span>{{ item.title }}</span>
+                  </li>
+                </VCardText>
+              </VCard>
+            </ul>
+          </li>
+        </ul>
+      </VCol>
+      <VCol cols="2" class="d-flex justify-end align-center ga-4">
+        <VCard>
+          <VCardText class="pa-2">
+            <VIcon icon="ri-search-line" color="primary"></VIcon>
+          </VCardText>
+        </VCard>
+
+        <VCard>
+          <VCardText class="pa-2">
+            <VIcon icon="ri-shopping-bag-line" color="primary"></VIcon>
+          </VCardText>
+        </VCard>
+
+        <VCard>
+          <VCardText class="pa-2">
+            <VIcon icon="ri-user-3-line" color="primary"></VIcon>
+          </VCardText>
+        </VCard>
+      </VCol>
+    </VRow>
+  </div>
+</template>
+
+<style lang="scss" scoped>
+.layout-header-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+
+  img {
+    width: calc(var(--header-height) - 8px);
+  }
+
+  li.nav-item {
+    cursor: pointer;
+    z-index: 2;
+
+    div > i {
+      transition: transform 0.25s;
+    }
+
+    ul.nav-children {
+      padding-top: calc(var(--header-height) / 2);
+      position: absolute;
+      min-width: var(--min-nav-width);
+      z-index: 2;
+      opacity: 0;
+      transition: all 0.25s;
+      transform: translateY(2rem);
+      visibility: hidden;
+
+      li {
+        padding: 0.4rem 0.2rem;
+        cursor: pointer;
+
+        i {
+          transition: all 0.25s ease;
+        }
+
+        &:hover {
+          background-color: rgb(238, 238, 238);
+
+          i {
+            margin-left: -1rem;
+            opacity: 0;
+          }
+        }
+      }
+
+      li.border-bottom {
+        border-bottom: 1px solid #ccc;
+      }
+    }
+
+    &:hover {
+      & > ul.nav-children {
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible;
+      }
+
+      & > div > i {
+        transform: rotate(-180deg);
+      }
+    }
+  }
+}
+</style>
