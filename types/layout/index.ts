@@ -1,8 +1,6 @@
 export interface Navbar {
   title: string;
-  to?: {
-    name: string;
-  };
+  to?: string;
   href?: string;
   disable?: boolean;
   children?: Navbar[];

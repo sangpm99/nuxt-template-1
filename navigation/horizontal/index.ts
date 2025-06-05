@@ -3,26 +3,26 @@ import type { Navbar } from "@/types/layout";
 const getNavItems: Navbar[] = [
   {
     title: "Home",
-    to: { name: "root" },
+    to: "/",
     public: true,
   },
   {
     title: "Shop",
-    to: { name: "shop" },
+    to: "shop",
     children: [
       {
         title: "T-Shirt",
-        to: { name: "product-category-t-shirt" },
+        to: "/product-category/t-shirt",
         public: true,
       },
       {
         title: "Hoodie",
-        to: { name: "product-category-hoodie" },
+        to: "/product-category/hoodie",
         public: true,
       },
       {
         title: "Sweater",
-        to: { name: "product-category-sweater" },
+        to: "/product-category/sweater",
         public: true,
       },
     ],
@@ -30,17 +30,17 @@ const getNavItems: Navbar[] = [
   },
   {
     title: "About",
-    to: { name: "about" },
+    to: "/about",
     public: true,
   },
   {
     title: "Blogs",
-    to: { name: "blogs" },
+    to: "/blogs",
     public: true,
   },
   {
     title: "Track Order",
-    to: { name: "track-order" },
+    to: "/track-order",
     public: true,
   },
   {
@@ -49,52 +49,52 @@ const getNavItems: Navbar[] = [
     children: [
       {
         title: "Contact",
-        to: { name: "contact" },
+        to: "/contact",
         public: true,
       },
       {
         title: "Privacy Policy",
-        to: { name: "privacy-policy" },
+        to: "/privacy-policy",
         public: true,
       },
       {
         title: "Billing Terms & Conditions",
-        to: { name: "billing-terms-conditions" },
+        to: "/billing-terms-conditions",
         public: true,
       },
       {
         title: "Cancellation & Changes",
-        to: { name: "cancellation-changes" },
+        to: "/cancellation-changes",
         public: true,
       },
       {
         title: "Copyright Policy",
-        to: { name: "copyright-policy" },
+        to: "/copyright-policy",
         public: true,
       },
       {
         title: "Disclaimer",
-        to: { name: "disclaimer" },
+        to: "/disclaimer",
         public: true,
       },
       {
         title: "FAQs",
-        to: { name: "faqs" },
+        to: "/faqs",
         public: true,
       },
       {
         title: "Return & Refund Policy",
-        to: { name: "return-refund-policy" },
+        to: "/return-refund-policy",
         public: true,
       },
       {
         title: "Shipping & Delivery",
-        to: { name: "shipping-delivery" },
+        to: "/shipping-delivery",
         public: true,
       },
       {
         title: "Terms Conditions",
-        to: { name: "terms-conditions" },
+        to: "/terms-conditions",
         public: true,
       },
     ],

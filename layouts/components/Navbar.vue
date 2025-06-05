@@ -1,19 +1,32 @@
 <script setup lang="ts">
 import navItems from "@/navigation/horizontal/index";
+
+const router = useRouter();
+
+const onNavigation = (to?: string) => {
+  if (to) {
+    router.push(to);
+  }
+};
 </script>
 
 <template>
-  <div class="layout-header-navbar elevation-1">
+  <div class="layout-header-navbar">
     <VRow no-gutters>
       <VCol cols="1">
-        <NuxtImg src="/logo.png"></NuxtImg>
+        <NuxtImg
+          src="/logo.png"
+          @click="onNavigation('/')"
+          class="cursor-pointer"
+        ></NuxtImg>
       </VCol>
       <VCol cols="9" class="d-flex align-center justify-center">
         <ul class="d-flex" style="list-style-type: none">
           <li
             v-for="(navItem, index) in navItems"
             :key="index"
-            class="position-relative px-3 nav-item"
+            class="position-relative px-3 nav-item cursor-pointer"
+            @click="onNavigation(navItem?.to)"
           >
             <div class="d-flex align-center">
               <span>{{ navItem.title }}</span>
@@ -40,7 +53,8 @@ import navItems from "@/navigation/horizontal/index";
                         ? 'border-bottom'
                         : ''
                     "
-                    class="d-flex align-center"
+                    class="d-flex align-center cursor-pointer"
+                    @click.stop="onNavigation(item?.to)"
                   >
                     <VIcon icon="ri-arrow-right-s-fill" color="primary"></VIcon>
                     <span>{{ item.title }}</span>
