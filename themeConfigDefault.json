@@ -1,0 +1,76 @@
+{
+  "title": "Shop Clothes",
+  "theme": {
+    "primaryColor": "#3490dc"
+  },
+  "header": {
+    "logo": "https://storage.googleapis.com/2hglobalstore/upload/2025/06/06152525.logo.png",
+    "favicon": "https://storage.googleapis.com/2hglobalstore/upload/2025/06/06152727.favicon.png",
+    "menu": {
+      "shop": [
+        {
+          "title": "T-Shirt",
+          "slug": "/product-category/t-shirt"
+        },
+        {
+          "title": "Hoodie",
+          "slug": "/product-category/hoodie"
+        },
+        {
+          "title": "Sweater",
+          "slug": "/product-category/sweater"
+        },
+        {
+          "title": "Cap",
+          "slug": "/product-category/cap"
+        },
+        {
+          "title": "Tote Bag",
+          "slug": "/product-category/tote-bag"
+        }
+      ]
+    }
+  },
+  "page": {
+    "home": {
+      "herroBanner": {
+        "banner": "https://storage.googleapis.com/2hglobalstore/upload/2025/06/06170251.banner-1.png",
+        "headline": "Your Imagination Our Creation",
+        "subHeadline": "Design one-of-a-kind pieces that reflect your style — printed and delivered with love."
+      },
+      "backToWork": {
+        "images": [
+          "https://storage.googleapis.com/2hglobalstore/upload/2025/06/06171835.image-1.png",
+          "https://storage.googleapis.com/2hglobalstore/upload/2025/06/06171902.image-2.png"
+        ]
+      },
+      "categories": [
+        {
+          "title": "T-Shirt",
+          "slug": "t-shirt",
+          "image": "https://storage.googleapis.com/2hglobalstore/upload/2025/06/06173238.t-shirt.jpg"
+        },
+        {
+          "title": "Hoodie",
+          "slug": "hoodie",
+          "image": "https://storage.googleapis.com/2hglobalstore/upload/2025/06/06173255.hoodie.jpg"
+        },
+        {
+          "title": "Sweater",
+          "slug": "sweater",
+          "image": "https://storage.googleapis.com/2hglobalstore/upload/2025/06/06173419.sweater.jpg"
+        },
+        {
+          "title": "Cap",
+          "slug": "cap",
+          "image": "https://storage.googleapis.com/2hglobalstore/upload/2025/06/06173429.cap.jpg"
+        },
+        {
+          "title": "Tote Bag",
+          "slug": "tote-bag",
+          "image": "https://storage.googleapis.com/2hglobalstore/upload/2025/06/06173457.tote-bag.jpg"
+        }
+      ]
+    }
+  }
+}

@@ -1,5 +1,6 @@
-import './icons.css'
+import { defineNuxtPlugin } from "#app";
+import "./icons.css";
 
-export default function () {
-  // This plugin just requires icons import
-}
+export default defineNuxtPlugin(() => {
+  // Plugin này chỉ cần import css
+});

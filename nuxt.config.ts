@@ -7,7 +7,11 @@ export default defineNuxtConfig({
   build: {
     transpile: ["vuetify"],
   },
-  css: ["@/assets/styles/styles.scss"],
+  css: [
+    "@splidejs/vue-splide/css",
+    "@/assets/styles/styles.scss",
+    "animate.css",
+  ],
   modules: [
     "@nuxt/content",
     "@nuxt/eslint",

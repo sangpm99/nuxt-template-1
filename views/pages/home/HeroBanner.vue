@@ -1,5 +1,8 @@
 <script setup lang="ts">
+const appConfig = useAppConfig();
 const router = useRouter();
+
+const { banner, headline, subHeadline } = appConfig.page.home.herroBanner;
 
 const onNavigationToShop = () => {
   router.push({ name: "shop" });
@@ -8,19 +11,15 @@ const onNavigationToShop = () => {
 
 <template>
   <div class="herro-banner position-relative">
-    <NuxtImg src="/images/banner-1.png"></NuxtImg>
+    <NuxtImg :src="banner"></NuxtImg>
 
     <div
       class="content-box position-absolute top-0 left-0 right-0 bottom-0 d-flex flex-column justify-center align-center"
     >
       <div class="d-flex flex-column justify-center align-center text-white">
-        <p class="font-heading">Your Imagination</p>
-        <p class="font-heading">Our Creation</p>
+        <p class="font-heading">{{ headline }}</p>
 
-        <p class="mt-3 mb-5 px-5">
-          Design one-of-a-kind pieces that reflect your style — printed and
-          delivered with love.
-        </p>
+        <p class="mt-3 mb-5 px-5">{{ subHeadline }}</p>
 
         <VBtn
           color="white"
@@ -57,6 +56,8 @@ const onNavigationToShop = () => {
       font-size: 600%;
       font-weight: 600;
       line-height: 100px;
+      text-align: center;
+      max-width: 900px;
 
       @media (max-width: 750px) {
         font-size: 400%;

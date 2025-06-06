@@ -1,13 +1,32 @@
 <script setup lang="ts">
+const appConfig = useAppConfig();
 import navItems from "@/navigation/horizontal/index";
+import type { Navbar } from "@/types/layout";
 
 const router = useRouter();
+const logo = appConfig.header.logo;
 
 const onNavigation = (to?: string) => {
   if (to) {
-    router.push(to);
+    return router.push(to);
   }
 };
+
+const categories = appConfig.header.menu.shop;
+
+if (categories && categories.length) {
+  const shopIndex = navItems.findIndex((item) => item.title === "Shop");
+  if (shopIndex !== -1) {
+    const navs: Navbar[] = categories.map((category) => {
+      return {
+        title: category.title,
+        to: category.slug,
+        public: true,
+      };
+    });
+    navItems[shopIndex].children! = [...navs];
+  }
+}
 </script>
 
 <template>
@@ -15,7 +34,7 @@ const onNavigation = (to?: string) => {
     <VRow no-gutters>
       <VCol cols="1">
         <NuxtImg
-          src="/logo.png"
+          :src="logo"
           @click="onNavigation('/')"
           class="cursor-pointer"
         ></NuxtImg>

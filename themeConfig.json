@@ -1,0 +1,34 @@
+{
+  "title": "Shop Clothes",
+  "theme": {
+    "primaryColor": "#3490dc"
+  },
+  "header": {
+    "logo": "https://storage.googleapis.com/2hglobalstore/upload/2025/06/06152525.logo.png",
+    "favicon": "https://storage.googleapis.com/2hglobalstore/upload/2025/06/06152727.favicon.png",
+    "menu": {
+      "shop": [
+        {
+          "title": "T-Shirt",
+          "slug": "/product-category/t-shirt"
+        },
+        {
+          "title": "Hoodie",
+          "slug": "/product-category/hoodie"
+        },
+        {
+          "title": "Sweater",
+          "slug": "/product-category/sweater"
+        },
+        {
+          "title": "Cap",
+          "slug": "/product-category/cap"
+        },
+        {
+          "title": "Tote Bag",
+          "slug": "/product-category/tote-bag"
+        }
+      ]
+    }
+  }
+}

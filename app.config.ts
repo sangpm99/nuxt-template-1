@@ -1,6 +1,7 @@
+import themeConfigDefault from "./themeConfigDefault.json";
+import themeConfig from "./themeConfig.json";
+
 export default defineAppConfig({
-  title: "Shop",
-  theme: {
-    primaryColor: "#3490dc",
-  },
+  ...themeConfigDefault,
+  ...themeConfig,
 });

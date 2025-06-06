@@ -8,24 +8,8 @@ const getNavItems: Navbar[] = [
   },
   {
     title: "Shop",
-    to: "shop",
-    children: [
-      {
-        title: "T-Shirt",
-        to: "/product-category/t-shirt",
-        public: true,
-      },
-      {
-        title: "Hoodie",
-        to: "/product-category/hoodie",
-        public: true,
-      },
-      {
-        title: "Sweater",
-        to: "/product-category/sweater",
-        public: true,
-      },
-    ],
+    to: "/shop",
+    children: [],
     public: true,
   },
   {
