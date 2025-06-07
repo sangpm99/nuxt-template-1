@@ -35,8 +35,14 @@ const onNavigateToProduct = () => {
           <VTabsWindow v-model="tabIndex">
             <VTabsWindowItem v-for="n in 5" :value="n">
               <Gap></Gap>
-              <VRow class="d-flex">
-                <VCol cols="3" v-for="(image, index) in 8" :key="index">
+              <VRow>
+                <VCol
+                  cols="12"
+                  sm="6"
+                  md="3"
+                  v-for="(image, index) in 8"
+                  :key="index"
+                >
                   <VCard @click="onNavigateToProduct" class="bg-gray">
                     <VCardText class="pa-2">
                       <div class="product-image zoom-in">
@@ -60,10 +66,14 @@ const onNavigateToProduct = () => {
                   </VCard>
                 </VCol>
               </VRow>
-              <Gap></Gap>
+              <Gap class="d-none d-md-block"></Gap>
             </VTabsWindowItem>
           </VTabsWindow>
         </ClientOnly>
+      </VCol>
+
+      <VCol cols="12" class="d-flex justify-center">
+        <VBtn>Show All</VBtn>
       </VCol>
     </VRow>
   </div>

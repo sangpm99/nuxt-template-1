@@ -70,6 +70,29 @@
           "slug": "tote-bag",
           "image": "https://storage.googleapis.com/2hglobalstore/upload/2025/06/06173457.tote-bag.jpg"
         }
+      ],
+      "testimonials": [
+        {
+          "name": "Sophia Reynolds",
+          "position": "Vacation Enthusiast",
+          "image": "https://storage.googleapis.com/2hglobalstore/upload/2025/06/07095325.clinte-img-4.jpg",
+          "review": "I absolutely love my custom hoodie! The quality is fantastic and the design turned out exactly as I imagined. Perfect for my trips and casual days.",
+          "rating": 4.5
+        },
+        {
+          "name": "Ethan Brooks",
+          "position": "Creative Designer",
+          "image": "https://storage.googleapis.com/2hglobalstore/upload/2025/06/07095326.clinte-img-2.jpg",
+          "review": "The personalized shirts from this shop are top-notch. The fabric feels soft and durable, and the print quality is impressive. Highly recommended!",
+          "rating": 5
+        },
+        {
+          "name": "Mia Turner",
+          "position": "Student & Trendsetter",
+          "image": "https://storage.googleapis.com/2hglobalstore/upload/2025/06/07095326.clinte-img-1.jpg",
+          "review": "I got a custom sweater and a cap here, and both fit perfectly. The attention to detail and the fast delivery really made me a happy customer.",
+          "rating": 5
+        }
       ]
     }
   }
