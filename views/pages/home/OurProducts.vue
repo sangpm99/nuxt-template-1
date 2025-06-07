@@ -14,7 +14,7 @@ const onNavigateToProduct = () => {
     <VRow>
       <VCol cols="12" class="d-flex flex-column align-center mb-5">
         <HeadingIcon width="70px" color="white"></HeadingIcon>
-        <p class="font-section-title">Products</p>
+        <p class="font-section-title text-center">Products</p>
       </VCol>
 
       <VCol cols="12">

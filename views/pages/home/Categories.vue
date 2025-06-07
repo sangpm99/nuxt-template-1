@@ -44,7 +44,7 @@ const onNavigateProductCategory = (slug: string) => {
     <VRow>
       <VCol cols="12" class="d-flex flex-column align-center mb-5">
         <HeadingIcon width="70px" color="white"></HeadingIcon>
-        <p class="font-section-title">Our Categories</p>
+        <p class="font-section-title text-center">Our Categories</p>
       </VCol>
 
       <VCol cols="12">

@@ -115,7 +115,7 @@ if (categories && categories.length) {
   right: 0;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  z-index: 1;
+  z-index: 100;
   display: flex;
   align-items: center;
   background-color: rgb(255, 255, 255);
@@ -126,7 +126,7 @@ if (categories && categories.length) {
 
   li.nav-item {
     cursor: pointer;
-    z-index: 2;
+    z-index: 101;
 
     div > i {
       transition: transform 0.25s;
@@ -136,7 +136,7 @@ if (categories && categories.length) {
       padding-top: calc(var(--header-height) / 2);
       position: absolute;
       min-width: var(--min-nav-width);
-      z-index: 2;
+      z-index: 102;
       opacity: 0;
       transition: all 0.25s;
       transform: translateY(2rem);

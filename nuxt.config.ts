@@ -13,7 +13,6 @@ export default defineNuxtConfig({
     "animate.css",
   ],
   modules: [
-    "@nuxt/content",
     "@nuxt/eslint",
     "@nuxt/image",
     (_options, nuxt) => {

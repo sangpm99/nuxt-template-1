@@ -1,8 +1,9 @@
 <script setup lang="ts">
 interface Props {
-  vertical?: boolean;
+  vertical?: boolean | null;
   color?: string;
 }
+
 const props = withDefaults(defineProps<Props>(), {
   vertical: false,
   color: "#ccc",
@@ -10,7 +11,14 @@ const props = withDefaults(defineProps<Props>(), {
 </script>
 
 <template>
-  <div
-    :style="`width: ${props.vertical ? '1px' : '100%'}; height: ${props.vertical ? '100%' : '1px'}; background-color: ${props.color}`"
-  ></div>
+  <ClientOnly>
+    <div
+      v-bind="$attrs"
+      :style="{
+        width: props.vertical ? '1px' : '100%',
+        height: props.vertical ? '100%' : '1px',
+        backgroundColor: props.color,
+      }"
+    ></div>
+  </ClientOnly>
 </template>

@@ -2,19 +2,23 @@
 const appConfig = useAppConfig();
 import { useDisplay } from "vuetify";
 
-const { mdAndDown } = useDisplay();
+const { smAndDown } = useDisplay();
 import HeadingIcon from "@/components/HeadingIcon.vue";
 import Divider from "@/components/Divider.vue";
+import Gap from "@/components/Gap.vue";
 
 const { testimonials } = appConfig.page.home;
 </script>
 
 <template>
   <div class="layout-wrapper py-30 bg-primary">
+    <Gap class="d-none d-md-block"></Gap>
+    <Gap class="d-none d-md-block"></Gap>
+    <Gap class="d-none d-md-block"></Gap>
     <VRow>
       <VCol cols="12" class="d-flex flex-column align-center mb-5">
         <HeadingIcon width="70px" color="white"></HeadingIcon>
-        <p class="font-section-title">Happy Customer Thoughts</p>
+        <p class="font-section-title text-center">Happy Customer Thoughts</p>
       </VCol>
 
       <VCol cols="12">
@@ -37,7 +41,7 @@ const { testimonials } = appConfig.page.home;
                           half-increments
                         ></VRating>
 
-                        <div style="min-height: calc(1rem * 6)">
+                        <div>
                           <p>{{ testimonial.review }}</p>
                         </div>
                       </VCol>
@@ -50,9 +54,15 @@ const { testimonials } = appConfig.page.home;
                     </VRow>
                   </VCol>
 
+                  <Divider
+                    class="d-none d-md-block"
+                    :vertical="false"
+                    color="white"
+                  ></Divider>
+
                   <VCol cols="12">
                     <VRow>
-                      <VCol cols="3">
+                      <VCol cols="3" sm="2" md="4" lg="3">
                         <NuxtImg
                           :src="testimonial.image"
                           class="rounded-circle"
@@ -60,8 +70,8 @@ const { testimonials } = appConfig.page.home;
                         ></NuxtImg>
                       </VCol>
 
-                      <VCol cols="9">
-                        <p>{{ testimonial.name }}</p>
+                      <VCol class="d-flex flex-column justify-center">
+                        <h3>{{ testimonial.name }}</h3>
                         <p>- {{ testimonial.position }} -</p>
                       </VCol>
                     </VRow>
@@ -71,7 +81,7 @@ const { testimonials } = appConfig.page.home;
 
               <VCol cols="12" md="auto">
                 <Divider
-                  :vertical="!mdAndDown"
+                  :vertical="!smAndDown"
                   color="white"
                   v-if="index !== testimonials.length - 1"
                 ></Divider>
@@ -80,6 +90,9 @@ const { testimonials } = appConfig.page.home;
           </VCol>
         </VRow>
       </VCol>
+      <Gap class="d-none d-md-block"></Gap>
+      <Gap class="d-none d-md-block"></Gap>
+      <Gap class="d-none d-md-block"></Gap>
     </VRow>
   </div>
 </template>

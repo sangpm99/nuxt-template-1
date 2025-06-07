@@ -18,7 +18,7 @@ const onNavigationToShop = () => {
     <VRow>
       <VCol cols="12" class="d-flex flex-column align-center">
         <HeadingIcon width="70px"></HeadingIcon>
-        <p class="font-section-title">Back To Work</p>
+        <p class="font-section-title text-center">Back To Work</p>
       </VCol>
 
       <VCol cols="12" md="5">

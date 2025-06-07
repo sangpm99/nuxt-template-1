@@ -30,5 +30,70 @@
         }
       ]
     }
+  },
+  "page": {
+    "home": {
+      "herroBanner": {
+        "banner": "https://storage.googleapis.com/2hglobalstore/upload/2025/06/06170251.banner-1.png",
+        "headline": "Your Imagination Our Creation",
+        "subHeadline": "Design one-of-a-kind pieces that reflect your style — printed and delivered with love."
+      },
+      "backToWork": {
+        "images": [
+          "https://storage.googleapis.com/2hglobalstore/upload/2025/06/06171835.image-1.png",
+          "https://storage.googleapis.com/2hglobalstore/upload/2025/06/06171902.image-2.png"
+        ]
+      },
+      "categories": [
+        {
+          "title": "T-Shirt",
+          "slug": "t-shirt",
+          "image": "https://storage.googleapis.com/2hglobalstore/upload/2025/06/06173238.t-shirt.jpg"
+        },
+        {
+          "title": "Hoodie",
+          "slug": "hoodie",
+          "image": "https://storage.googleapis.com/2hglobalstore/upload/2025/06/06173255.hoodie.jpg"
+        },
+        {
+          "title": "Sweater",
+          "slug": "sweater",
+          "image": "https://storage.googleapis.com/2hglobalstore/upload/2025/06/06173419.sweater.jpg"
+        },
+        {
+          "title": "Cap",
+          "slug": "cap",
+          "image": "https://storage.googleapis.com/2hglobalstore/upload/2025/06/06173429.cap.jpg"
+        },
+        {
+          "title": "Tote Bag",
+          "slug": "tote-bag",
+          "image": "https://storage.googleapis.com/2hglobalstore/upload/2025/06/06173457.tote-bag.jpg"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Sophia Reynolds",
+          "position": "Vacation Enthusiast",
+          "image": "https://storage.googleapis.com/2hglobalstore/upload/2025/06/07095325.clinte-img-4.jpg",
+          "review": "I absolutely love my custom hoodie! The quality is fantastic and the design turned out exactly as I imagined. Perfect for my trips and casual days.",
+          "rating": 4.5
+        },
+        {
+          "name": "Ethan Brooks",
+          "position": "Creative Designer",
+          "image": "https://storage.googleapis.com/2hglobalstore/upload/2025/06/07095326.clinte-img-2.jpg",
+          "review": "The personalized shirts from this shop are top-notch. The fabric feels soft and durable, and the print quality is impressive. Highly recommended!",
+          "rating": 5
+        },
+        {
+          "name": "Mia Turner",
+          "position": "Student & Trendsetter",
+          "image": "https://storage.googleapis.com/2hglobalstore/upload/2025/06/07095326.clinte-img-1.jpg",
+          "review": "I got a custom sweater and a cap here, and both fit perfectly. The attention to detail and the fast delivery really made me a happy customer.",
+          "rating": 5
+        }
+      ]
+    }
   }
 }
