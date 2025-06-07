@@ -93,6 +93,29 @@
           "review": "I got a custom sweater and a cap here, and both fit perfectly. The attention to detail and the fast delivery really made me a happy customer.",
           "rating": 5
         }
+      ],
+      "blogs": [
+        {
+          "id": "1",
+          "title": "Why Personalized T-Shirts Make the Perfect Gift",
+          "summary": "Custom t-shirts are thoughtful, creative, and perfect for any occasion. Discover how personalized designs create lasting memories.",
+          "featuredImage": "https://storage.googleapis.com/2hglobalstore/upload/2025/06/07153934.rezort-blog-image-01.jpg",
+          "content": "<h2>Stand Out with a Personal Touch</h2>\n<p>In a world full of mass-produced items, personalized gifts bring something truly special to the table. A custom T-shirt is more than just clothing — it’s a message, a memory, and a moment frozen in time.</p>\n\n<h2>Perfect for Every Occasion</h2>\n<p>Whether it’s a <strong>birthday</strong>, <strong>anniversary</strong>, <strong>graduation</strong>, or a simple <em>“thinking of you”</em> gift, personalized t-shirts always make people smile. You can add names, important dates, favorite quotes, or even custom artwork. The possibilities are endless!</p>\n\n<h2>High Quality Meets Creativity</h2>\n<p>At our shop, we combine premium materials with high-quality printing to ensure every t-shirt looks and feels amazing. We make it easy to design your own shirt — just choose a style, upload your idea, and we’ll do the rest.</p>\n\n<ul>\n  <li>Soft, durable fabrics</li>\n  <li>Full-color printing that lasts</li>\n  <li>Easy online customization</li>\n</ul>\n\n<h2>Make It Memorable</h2>\n<p>Don’t settle for ordinary. Give a gift that tells a story — your story. Personalized T-shirts are a simple way to make lasting memories.</p>\n\n<p><em>Design yours today and share your creativity with the world.</em></p>"
+        },
+        {
+          "id": "2",
+          "title": "Stay Warm in Style: The Rise of Personalized Hoodies",
+          "summary": "Custom hoodies blend comfort with personality. Explore why personalized hoodies are becoming a must-have for fashion lovers and thoughtful gifters.",
+          "featuredImage": "https://storage.googleapis.com/2hglobalstore/upload/2025/06/07153933.rezort-blog-image-02.jpg",
+          "content": "<h2>Comfort That Speaks Your Style</h2>\n<p>There's nothing like slipping into a warm, cozy hoodie — especially when it’s made just for you. Personalized hoodies offer a perfect mix of comfort, quality, and individuality. Whether you're lounging at home or heading out with friends, a custom hoodie lets your personality shine.</p>\n\n<h2>Why Choose a Personalized Hoodie?</h2>\n<ul>\n  <li><strong>Express Yourself:</strong> Add names, quotes, symbols, or artwork that reflect who you are.</li>\n  <li><strong>Great for Gifts:</strong> Surprise your loved ones with a hoodie designed just for them.</li>\n  <li><strong>Team or Group Events:</strong> Create a sense of unity and identity for sports teams, clubs, or family reunions.</li>\n</ul>\n\n<h2>Made to Last</h2>\n<p>Our hoodies are made from premium materials designed to keep you warm and comfortable. We use advanced printing technology to ensure your custom design stays vibrant, wash after wash.</p>\n\n<p>From classic pullovers to zip-up styles, we offer a variety of options in different colors and sizes to fit every need.</p>\n\n<h2>How It Works</h2>\n<ol>\n  <li>Choose your hoodie style and color.</li>\n  <li>Upload your design or add custom text.</li>\n  <li>Place your order and let us bring your idea to life!</li>\n</ol>\n\n<p><em>Don't just wear a hoodie — wear your story. Start customizing today!</em></p>"
+        },
+        {
+          "id": "3",
+          "title": "Cozy & Unique: Personalized Sweaters for Every Season",
+          "summary": "Add warmth and personality to your wardrobe with custom sweaters. Learn how personalized designs turn a simple sweater into something truly special.",
+          "featuredImage": "https://storage.googleapis.com/2hglobalstore/upload/2025/06/07153933.rezort-blog-image-03.jpg",
+          "content": "<h2>Make Comfort Personal</h2>\n<p>There’s something timeless about a cozy sweater — and when it’s personalized, it becomes even more meaningful. Whether it’s a gift or a treat for yourself, custom sweaters offer a perfect balance of comfort and creativity.</p>\n\n<h2>Why Choose a Personalized Sweater?</h2>\n<p>Unlike off-the-rack options, personalized sweaters allow you to showcase your identity. Add initials, names, inspirational quotes, or even your own artwork to make your sweater truly one-of-a-kind.</p>\n\n<ul>\n  <li><strong>Perfect for holidays and birthdays</strong></li>\n  <li><strong>Great for couple or family sets</strong></li>\n  <li><strong>Ideal for matching team or company outfits</strong></li>\n</ul>\n\n<h2>Designed with Quality in Mind</h2>\n<p>Our sweaters are made with premium fabrics to ensure they’re soft, durable, and comfortable throughout the year. Whether it's a lightweight knit for spring or a thick fleece-lined sweater for winter, we’ve got options to match every season.</p>\n\n<h2>Easy Customization Process</h2>\n<ol>\n  <li>Pick your favorite style and color</li>\n  <li>Add your personalized text or design</li>\n  <li>Preview your creation and order with confidence</li>\n</ol>\n\n<p>Each piece is printed or embroidered with care to ensure lasting results that look and feel amazing.</p>\n\n<h2>Wrap Yourself in Meaning</h2>\n<p><em>Personalized sweaters are more than just fashion — they’re expressions of who you are. Create yours today and wear your story proudly.</em></p>"
+        }
       ]
     }
   }

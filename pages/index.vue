@@ -4,6 +4,7 @@ import BackToWork from "@/views/pages/home/BackToWork.vue";
 import OurCategories from "@/views/pages/home/Categories.vue";
 import OurProducts from "@/views/pages/home/OurProducts.vue";
 import Testimonials from "@/views/pages/home/Testimonials.vue";
+import Blogs from "@/views/pages/home/Blogs.vue";
 </script>
 
 <template>
@@ -13,5 +14,6 @@ import Testimonials from "@/views/pages/home/Testimonials.vue";
     <OurCategories></OurCategories>
     <OurProducts></OurProducts>
     <Testimonials></Testimonials>
+    <Blogs></Blogs>
   </div>
 </template>
