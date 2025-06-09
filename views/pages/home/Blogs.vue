@@ -1,12 +1,15 @@
 <script setup lang="ts">
 const appConfig = useAppConfig();
-import { useDisplay } from "vuetify";
 import { getTimeNow, formatTimeStamp } from "@/utils";
 
-const { smAndDown } = useDisplay();
+const router = useRouter();
 import HeadingIcon from "@/components/HeadingIcon.vue";
 
 const { blogs } = appConfig.page.home;
+
+const onNavigateToBlog = (id: string) => {
+  router.push("/blog/" + id);
+};
 </script>
 
 <template>
@@ -19,20 +22,31 @@ const { blogs } = appConfig.page.home;
 
       <VCol cols="12">
         <VRow>
-          <VCol cols="4" v-for="(blog, index) in blogs" :key="blog.id">
-            <VCard>
+          <VCol cols="12" md="4" v-for="(blog, index) in blogs" :key="blog.id">
+            <VCard class="h-100 position-relative">
               <VCardText class="pa-2" style="height: 300px">
-                <NuxtImg :src="blog.featuredImage" class="zoom-in"></NuxtImg>
+                <NuxtImg
+                  :src="blog.featuredImage"
+                  class="cursor-pointer"
+                  @click="onNavigateToBlog(blog.id)"
+                  :alt="blog.title"
+                ></NuxtImg>
               </VCardText>
-              <VCardText class="px-3 pt-0 d-flex flex-column ga-3">
+              <VCardText class="px-3 pt-0 d-flex flex-column ga-3 blog-content">
                 <h3>{{ blog.title }}</h3>
                 <p>{{ blog.summary }} [...]</p>
-                <p class="text-end">
-                  {{
-                    formatTimeStamp(getTimeNow() - 24 * 60 * 60 * 1000 * index)
-                  }}
-                </p>
-                <VBtn>Read More</VBtn>
+                <div class="position-absolute bottom-0 left-0 right-0 pa-2">
+                  <p class="text-end">
+                    {{
+                      formatTimeStamp(
+                        getTimeNow() - 24 * 60 * 60 * 1000 * index
+                      )
+                    }}
+                  </p>
+                  <VBtn block @click="onNavigateToBlog(blog.id)"
+                    >Read More</VBtn
+                  >
+                </div>
               </VCardText>
             </VCard>
           </VCol>
@@ -49,6 +63,15 @@ const { blogs } = appConfig.page.home;
     height: 100%;
     object-fit: cover;
     object-position: center;
+    transition: opacity 0.25s ease-in-out;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  .blog-content {
+    padding-bottom: 70px;
   }
 }
 </style>
