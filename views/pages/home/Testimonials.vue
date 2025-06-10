@@ -11,7 +11,7 @@ const { testimonials } = appConfig.page.home;
 </script>
 
 <template>
-  <div class="layout-wrapper py-30 bg-primary">
+  <div class="layout-wrapper bg-primary padding-section mt-5">
     <Gap class="d-none d-md-block"></Gap>
     <Gap class="d-none d-md-block"></Gap>
     <Gap class="d-none d-md-block"></Gap>

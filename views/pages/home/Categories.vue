@@ -40,7 +40,7 @@ const onNavigateProductCategory = (slug: string) => {
 </script>
 
 <template>
-  <div class="layout-wrapper py-30 our-categories bg-primary">
+  <div class="layout-wrapper our-categories bg-primary padding-section mt-5">
     <VRow>
       <VCol cols="12" class="d-flex flex-column align-center mb-5">
         <HeadingIcon width="70px" color="white"></HeadingIcon>

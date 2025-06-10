@@ -10,7 +10,7 @@ const onNavigateToProduct = () => {
 </script>
 
 <template>
-  <div class="layout-wrapper py-30 our-products">
+  <div class="layout-wrapper our-products padding-section">
     <VRow>
       <VCol cols="12" class="d-flex flex-column align-center mb-5">
         <HeadingIcon width="70px" color="white"></HeadingIcon>

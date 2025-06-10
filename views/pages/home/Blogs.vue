@@ -13,7 +13,7 @@ const onNavigateToBlog = (id: string) => {
 </script>
 
 <template>
-  <div class="layout-wrapper py-30 blogs">
+  <div class="layout-wrapper blogs mb-10 mb-md-5">
     <VRow>
       <VCol cols="12" class="d-flex flex-column align-center mb-5">
         <HeadingIcon width="70px" color="white"></HeadingIcon>
@@ -22,7 +22,13 @@ const onNavigateToBlog = (id: string) => {
 
       <VCol cols="12">
         <VRow>
-          <VCol cols="12" md="4" v-for="(blog, index) in blogs" :key="blog.id">
+          <VCol
+            cols="12"
+            sm="6"
+            md="4"
+            v-for="(blog, index) in blogs"
+            :key="blog.id"
+          >
             <VCard class="h-100 position-relative">
               <VCardText class="pa-2" style="height: 300px">
                 <NuxtImg

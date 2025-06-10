@@ -14,7 +14,7 @@ const onNavigationToShop = () => {
 </script>
 
 <template>
-  <div class="layout-wrapper py-30 back-to-work">
+  <div class="layout-wrapper back-to-work padding-section">
     <VRow>
       <VCol cols="12" class="d-flex flex-column align-center">
         <HeadingIcon width="70px"></HeadingIcon>

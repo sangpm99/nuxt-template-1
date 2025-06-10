@@ -20,3 +20,8 @@ export const formatTimeStamp = (time: number): string => {
   const year = now.getFullYear();
   return `${day} - ${month} - ${year}`;
 };
+
+export const getCurrentYear = (): number => {
+  const now = new Date();
+  return now.getFullYear();
+};

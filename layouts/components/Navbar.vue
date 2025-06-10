@@ -3,6 +3,11 @@ const appConfig = useAppConfig();
 import navItems from "@/navigation/horizontal/index";
 import type { Navbar } from "@/types/layout";
 
+interface Emit {
+  (e: "open:navbar"): void;
+}
+const emit = defineEmits<Emit>();
+
 const router = useRouter();
 const logo = appConfig.header.logo;
 
@@ -31,16 +36,16 @@ if (categories && categories.length) {
 
 <template>
   <div class="layout-header-navbar">
-    <VRow no-gutters>
-      <VCol cols="1">
+    <VRow no-gutters class="d-flex justify-space-between">
+      <VCol cols="auto">
         <NuxtImg
           :src="logo"
           @click="onNavigation('/')"
           class="cursor-pointer"
         ></NuxtImg>
       </VCol>
-      <VCol cols="9" class="d-flex align-center justify-center">
-        <ul class="d-flex" style="list-style-type: none">
+      <VCol class="d-none d-md-flex align-center justify-center">
+        <ul class="d-flex list-none">
           <li
             v-for="(navItem, index) in navItems"
             :key="index"
@@ -57,11 +62,7 @@ if (categories && categories.length) {
               ></VIcon>
             </div>
 
-            <ul
-              v-if="navItem.children"
-              class="nav-children"
-              style="list-style-type: none"
-            >
+            <ul v-if="navItem.children" class="nav-children list-none">
               <VCard>
                 <VCardText class="pa-0">
                   <li
@@ -84,7 +85,7 @@ if (categories && categories.length) {
           </li>
         </ul>
       </VCol>
-      <VCol cols="2" class="d-flex justify-end align-center ga-4">
+      <VCol cols="2" class="d-none d-md-flex justify-end align-center ga-4">
         <VCard>
           <VCardText class="pa-2">
             <VIcon icon="ri-search-line" color="primary"></VIcon>
@@ -102,6 +103,14 @@ if (categories && categories.length) {
             <VIcon icon="ri-user-3-line" color="primary"></VIcon>
           </VCardText>
         </VCard>
+      </VCol>
+      <VCol cols="auto" class="d-flex d-md-none align-center">
+        <VBtn
+          icon="ri-menu-line"
+          variant="text"
+          @click="emit('open:navbar')"
+          aria-label="Open menu"
+        ></VBtn>
       </VCol>
     </VRow>
   </div>
