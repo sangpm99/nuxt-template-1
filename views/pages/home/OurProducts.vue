@@ -51,12 +51,12 @@ const onNavigateToProduct = () => {
                           src="/images/image-1.png"
                         ></NuxtImg>
                       </div>
-                      <p class="mt-2 two-lines">
+                      <p class="mb-0 mt-2 two-lines">
                         By His Grace | embroidered Christian hoodie vintage,
                         Christian Men Gift, faith streetwear, aesthetic
                         Christian gym apparel
                       </p>
-                      <p class="d-flex ga-4">
+                      <p class="mb-0 d-flex ga-4">
                         <span class="text-error font-weight-bold">$ 24.99</span>
                         <span class="text-decoration-line-through text-sub"
                           >$ 46.98</span

@@ -17,6 +17,10 @@ const isDrawerOpen = ref<boolean>(false);
 
     <Footer></Footer>
 
-    <MenuMobileDrawer v-model:is-drawer-open="isDrawerOpen"></MenuMobileDrawer>
+    <ClientOnly>
+      <MenuMobileDrawer
+        v-model:is-drawer-open="isDrawerOpen"
+      ></MenuMobileDrawer>
+    </ClientOnly>
   </div>
 </template>

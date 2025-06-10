@@ -25,6 +25,25 @@ const onNavigation = (to?: string) => {
   }
 };
 
+const lastMenu: Navbar[] = [
+  {
+    title: "Cart",
+    to: "/cart",
+    public: true,
+  },
+  {
+    title: "Profile",
+    public: true,
+    children: [
+      {
+        title: "My Profile",
+        to: "/profile",
+        public: false,
+      },
+    ],
+  },
+];
+
 if (categories && categories.length) {
   const shopIndex = navItems.findIndex((item) => item.title === "Shop");
   if (shopIndex !== -1) {
@@ -35,7 +54,7 @@ if (categories && categories.length) {
         public: true,
       };
     });
-    navItems[shopIndex].children! = [...navs];
+    navItems[shopIndex].children! = [...navs, ...lastMenu];
   }
 }
 </script>
@@ -55,7 +74,7 @@ if (categories && categories.length) {
       <VCardText class="pa-0 menu-mobile">
         <VExpansionPanels variant="accordion">
           <VExpansionPanel
-            v-for="(navItem, index) in navItems"
+            v-for="(navItem, index) in [...navItems, ...lastMenu]"
             :key="index"
             :readonly="!navItem.children"
           >

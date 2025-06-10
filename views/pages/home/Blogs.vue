@@ -40,9 +40,9 @@ const onNavigateToBlog = (id: string) => {
               </VCardText>
               <VCardText class="px-3 pt-0 d-flex flex-column ga-3 blog-content">
                 <h3>{{ blog.title }}</h3>
-                <p>{{ blog.summary }} [...]</p>
+                <p class="mb-0">{{ blog.summary }} [...]</p>
                 <div class="position-absolute bottom-0 left-0 right-0 pa-2">
-                  <p class="text-end">
+                  <p class="text-end mb-0">
                     {{
                       formatTimeStamp(
                         getTimeNow() - 24 * 60 * 60 * 1000 * index

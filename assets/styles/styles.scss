@@ -113,23 +113,23 @@ a {
 }
 
 .font-heading {
-  font-family: "Alumni Sans Pinstripe", sans-serif !important;
+  font-family: "Alumni Sans", sans-serif !important;
 }
 
 .font-section-title,
 .font-title{
-  font-family: "Alumni Sans Pinstripe", sans-serif !important;
+  font-family: "Alumni Sans", sans-serif !important;
 }
 
 .font-section-title {
   font-size: 400%;
-  font-weight: 300;
+  font-weight: 100;
   line-height: 50px;
 }
 
 .font-title {
   font-size: 180%;
-  font-weight: 300;
+  font-weight: 100;
   letter-spacing: 2px;
 }
 
@@ -149,6 +149,11 @@ a {
 
 .text-sub {
   color: #7c7c7c;
+}
+
+p {
+  line-height: 2em;
+  margin-bottom: 1rem;
 }
 
 // 👉 Background Color
@@ -174,4 +179,14 @@ a {
 // 👉 Color
 .border-white {
   border-color: #fff !important;
+}
+
+.page {
+  h1 {
+    font-size: 250%;
+  }
+
+  h2 {
+    font-size: 150%;
+  }
 }
