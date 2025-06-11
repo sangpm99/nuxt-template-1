@@ -3,4 +3,7 @@ export default {
     color: "primary",
     class: "text-none",
   },
+  VTextField: {
+    density: "compact",
+  },
 };

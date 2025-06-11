@@ -7,7 +7,7 @@ import HeadingIcon from "@/components/HeadingIcon.vue";
 
 const { lgAndUp, md, sm } = useDisplay();
 const router = useRouter();
-const { categories } = appConfig.page.home;
+const { categories } = appConfig;
 const perPage = computed(() => {
   switch (categories.length) {
     case 0: {

@@ -1,10 +1,10 @@
 <script setup lang="ts">
 const appConfig = useAppConfig();
-const { title, contact } = appConfig;
+const { contact } = appConfig;
 </script>
 
 <template>
-  <div v-if="title" class="layout-wrapper mt-5 mb-10 page">
+  <div class="layout-wrapper mt-5 mb-10 page">
     <h1 class="text-center mb-5">Contact</h1>
 
     <p>
@@ -12,5 +12,12 @@ const { title, contact } = appConfig;
       at
       <a :href="`mailto:${contact.email.value}`">{{ contact.email.label }}</a>
     </p>
+
+    <VTextField label="Your Email *"></VTextField>
+    <VTextField label="Your Name *"></VTextField>
+    <VTextField label="Your Phone Number"></VTextField>
+    <VTextarea label="Your Description" counter="500"></VTextarea>
+
+    <VBtn>Send</VBtn>
   </div>
 </template>

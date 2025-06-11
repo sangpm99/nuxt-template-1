@@ -71,33 +71,6 @@
           "https://storage.googleapis.com/2hglobalstore/upload/2025/06/06171902.image-2.png"
         ]
       },
-      "categories": [
-        {
-          "title": "T-Shirt",
-          "slug": "t-shirt",
-          "image": "https://storage.googleapis.com/2hglobalstore/upload/2025/06/06173238.t-shirt.jpg"
-        },
-        {
-          "title": "Hoodie",
-          "slug": "hoodie",
-          "image": "https://storage.googleapis.com/2hglobalstore/upload/2025/06/06173255.hoodie.jpg"
-        },
-        {
-          "title": "Sweater",
-          "slug": "sweater",
-          "image": "https://storage.googleapis.com/2hglobalstore/upload/2025/06/06173419.sweater.jpg"
-        },
-        {
-          "title": "Cap",
-          "slug": "cap",
-          "image": "https://storage.googleapis.com/2hglobalstore/upload/2025/06/06173429.cap.jpg"
-        },
-        {
-          "title": "Tote Bag",
-          "slug": "tote-bag",
-          "image": "https://storage.googleapis.com/2hglobalstore/upload/2025/06/06173457.tote-bag.jpg"
-        }
-      ],
       "testimonials": [
         {
           "name": "Sophia Reynolds",

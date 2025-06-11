@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const appConfig = useAppConfig();
-const { title } = appConfig;
+const { title, contact } = appConfig;
 </script>
 
 <template>
@@ -63,7 +63,10 @@ const { title } = appConfig;
           If you experience any problems making your payment or discover that
           the designated payment methods aren’t working when you check out,
           don’t hesitate to get in touch with us by sending an email to
-          [site_email].
+          <a :href="`mailto:${contact.email.value}`">{{
+            contact.email.label
+          }}</a
+          >.
         </p>
         <h2 class="mb-2">Payment Security</h2>
         <p>
@@ -104,7 +107,10 @@ const { title } = appConfig;
         <p>
           If you have any concerns or questions about the security of your
           payment information, please contact us at
-          <a rel="noreferrer">[site_email]</a> for assistance.
+          <a :href="`mailto:${contact.email.value}`">{{
+            contact.email.label
+          }}</a>
+          for assistance.
         </p>
         <h2 class="mb-2">Pricing and Taxes</h2>
         <p>

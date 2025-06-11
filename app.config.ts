@@ -1,7 +1,7 @@
-import themeConfigDefault from "./themeConfigDefault.json";
 import themeConfig from "./themeConfig.json";
+import categories from "./categories.json";
 
 export default defineAppConfig({
-  ...themeConfigDefault,
   ...themeConfig,
+  ...categories,
 });

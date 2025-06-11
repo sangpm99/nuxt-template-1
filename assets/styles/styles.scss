@@ -6,7 +6,7 @@
   --header-height: 80px;
   --footer-height: 500px;
   --main-height: calc(100vh - 100px - 500px);
-  --min-nav-width: 200px;
+  --min-nav-width: 250px;
   --border-radius-md: 20px;
   --gray: #f4f4f4;
 
@@ -82,6 +82,22 @@ a {
   overflow: hidden;
 }
 
+.disable-tab-transition {
+  overflow: unset !important;
+
+  .v-window__container {
+    block-size: auto !important;
+  }
+
+  .v-window-item:not(.v-window-item--active) {
+    display: none !important;
+  }
+
+  .v-window__container .v-window-item {
+    transform: none !important;
+  }
+}
+
 // 👉 Size
 .padding-section {
   padding-top: 30px;
@@ -93,18 +109,22 @@ a {
 }
 
 // 👉 Dimension
-.layout-wrapper,
-.layout-header-navbar {
-  padding-left: var(--wrap-spacer);
-  padding-right: var(--wrap-spacer);
-}
+.main-layout {
+  min-height: 100vh;
 
-.layout-header-navbar {
-  height: var(--header-height);
-}
+  .layout-wrapper,
+  .layout-header-navbar {
+    padding-left: var(--wrap-spacer);
+    padding-right: var(--wrap-spacer);
+  }
 
-.layout-page-content {
-  margin-top: var(--header-height);
+  .layout-header-navbar {
+    height: var(--header-height);
+  }
+
+  .layout-page-content {
+    margin-top: var(--header-height);
+  }
 }
 
 // 👉 Font
@@ -181,6 +201,12 @@ p {
   border-color: #fff !important;
 }
 
+// 👉 Border
+.border-b-primary {
+  border-bottom: 1px solid rgb(var(--color-primary));
+}
+
+// 👉 Page
 .page {
   h1 {
     font-size: 250%;
@@ -190,3 +216,4 @@ p {
     font-size: 150%;
   }
 }
+

@@ -13,7 +13,7 @@ const onNavigateToBlog = (id: string) => {
 </script>
 
 <template>
-  <div class="layout-wrapper blogs mb-10 mb-md-5">
+  <div class="layout-wrapper blogs mb-5 mb-md-10">
     <VRow>
       <VCol cols="12" class="d-flex flex-column align-center mb-5">
         <HeadingIcon width="70px" color="white"></HeadingIcon>

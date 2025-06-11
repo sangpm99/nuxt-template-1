@@ -6,7 +6,7 @@ const { title, contact, header } = appConfig;
 </script>
 
 <template>
-  <footer class="bg-primary mt-0 mt-sm-10">
+  <footer class="bg-primary">
     <div class="layout-wrapper padding-section">
       <VRow class="d-flex justify-lg-space-between">
         <VCol cols="12" sm="6" md="6" lg="auto">
@@ -14,24 +14,30 @@ const { title, contact, header } = appConfig;
           <ul class="list-none">
             <li class="py-2" v-if="contact.email.value && contact.email.label">
               <VIcon icon="ri-arrow-drop-right-line"></VIcon>
-              <b>Email: </b>
-              <a :href="`mailto:${contact.email.value}`">
-                {{ contact.email.label }}
-              </a>
+              <span>
+                <b>Email: </b>
+                <a :href="`mailto:${contact.email.value}`">
+                  {{ contact.email.label }}
+                </a>
+              </span>
             </li>
 
             <li class="py-2" v-if="contact.phone.value && contact.phone.label">
               <VIcon icon="ri-arrow-drop-right-line"></VIcon>
-              <b>Phone Number: </b>
-              <a :href="'tel:' + contact.phone.value">
-                {{ contact.phone.label }}
-              </a>
+              <span>
+                <b>Phone Number: </b>
+                <a :href="'tel:' + contact.phone.value">
+                  {{ contact.phone.label }}
+                </a>
+              </span>
             </li>
 
             <li class="py-2" v-if="contact.address">
               <VIcon icon="ri-arrow-drop-right-line"></VIcon>
-              <b>Address: </b>
-              <span>{{ contact.address }}</span>
+              <span>
+                <b>Address: </b>
+                <span>{{ contact.address }}</span>
+              </span>
             </li>
           </ul>
         </VCol>
