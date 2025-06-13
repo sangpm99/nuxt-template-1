@@ -365,19 +365,310 @@
       "title": "Sweater",
       "slug": "sweater",
       "image": "https://storage.googleapis.com/2hglobalstore/upload/2025/06/06173419.sweater.jpg",
-      "products": []
+      "products": [
+        {
+          "id": "a8b790ec-f04e-4aed-9c56-2ab769d7a614",
+          "productName":
+          "Book Club Sweatshirt, A Book A Day Keeps The Mental Breakdown Away, Book Lover Gift, Reading Book, Bookworm Gift, Book Hoodie",
+          "description":
+          "<p><strong>\uD83E\uDDE5 Express your personality with our Personalized Hoodies — a cozy blend of comfort, style, and individuality.</strong></p>\n\n  <p>✨ Crafted from premium, soft-touch fabric, these hoodies are designed to keep you warm while showcasing your unique design. Whether you're adding your name, favorite quote, or a meaningful graphic, every hoodie becomes a personal statement.</p>\n\n  <p>\uD83C\uDFA8 Available in a wide range of colors and sizes, they're perfect for casual days, thoughtful gifts, or commemorating special occasions. Make every moment warmer and more memorable with a hoodie that's made just for you.</p>\n\n  <p><strong>\uD83D\uDCA1 Your story, your design — wear it your way.</strong></p>",
+          "regularPrice": 42.34,
+          "salePrice": 39.88,
+          "productCategory": "Sweater",
+          "productTags": "Sweater, Winter Collection",
+          "mainMockupURL":
+          "https://storage.googleapis.com/2hglobalstore/upload/2025/05/20114945.screenshot640.png",
+          "mockupURLs": [
+            {
+              "imageURL": "https://storage.googleapis.com/2hglobalstore/upload/2025/05/20114945.screenshot640.png",
+              "isPrimary": false
+            },
+            {
+              "imageURL": "https://storage.googleapis.com/2hglobalstore/upload/2025/05/20114945.screenshot639.png",
+              "isPrimary": false
+            }
+          ],
+          "quantity": 99
+        },
+        {
+          "id": "70beec55-f4b2-4849-9f1e-bf9d2e32a6d5",
+          "productName":
+          "2 Side MMA Fight Night Tee,  Event Sweatshirt, Graphic Hoodie For Fans, Perfect Fit, Ultimate Comfort",
+          "description":
+          "<p><strong>\uD83E\uDDE5 Express your personality with our Personalized Hoodies — a cozy blend of comfort, style, and individuality.</strong></p>\n\n  <p>✨ Crafted from premium, soft-touch fabric, these hoodies are designed to keep you warm while showcasing your unique design. Whether you're adding your name, favorite quote, or a meaningful graphic, every hoodie becomes a personal statement.</p>\n\n  <p>\uD83C\uDFA8 Available in a wide range of colors and sizes, they're perfect for casual days, thoughtful gifts, or commemorating special occasions. Make every moment warmer and more memorable with a hoodie that's made just for you.</p>\n\n  <p><strong>\uD83D\uDCA1 Your story, your design — wear it your way.</strong></p>",
+          "regularPrice": 42.34,
+          "salePrice": 39.88,
+          "productCategory": "Sweater",
+          "productTags": "Sweater, Winter Collection",
+          "mainMockupURL":
+          "https://p19-oec-ttp.tiktokcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/1442bf2eba9b48c68a6ee63a9717dc8a~tplv-omjb5zjo8w-origin-jpeg.jpeg?from=1568152328",
+          "mockupURLs": [
+            {
+              "imageURL": "https://p19-oec-ttp.tiktokcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/1442bf2eba9b48c68a6ee63a9717dc8a~tplv-omjb5zjo8w-origin-jpeg.jpeg?from=1568152328",
+              "isPrimary": true
+            }
+          ],
+          "quantity": 99
+        },
+        {
+          "id": "17a558d1-2261-4583-97f0-46e84d804e5c",
+          "productName":
+          "Clair Obscur Expedition 33 Sweatshirt and Hoodie, Esquie Embroidered Sweatshirt and Hoodie, Expedition 33 Merch, Gift for Gamer4",
+          "description":
+          "<p><strong>\uD83E\uDDE5 Express your personality with our Personalized Hoodies — a cozy blend of comfort, style, and individuality.</strong></p>\n\n  <p>✨ Crafted from premium, soft-touch fabric, these hoodies are designed to keep you warm while showcasing your unique design. Whether you're adding your name, favorite quote, or a meaningful graphic, every hoodie becomes a personal statement.</p>\n\n  <p>\uD83C\uDFA8 Available in a wide range of colors and sizes, they're perfect for casual days, thoughtful gifts, or commemorating special occasions. Make every moment warmer and more memorable with a hoodie that's made just for you.</p>\n\n  <p><strong>\uD83D\uDCA1 Your story, your design — wear it your way.</strong></p>",
+          "regularPrice": 42.34,
+          "salePrice": 39.88,
+          "productCategory": "Hoodie",
+          "productTags": "Hoodie, Winter Collection",
+          "mainMockupURL":
+          "https://storage.googleapis.com/2hglobalstore/upload/2025/05/30114441.il794xn-6896960984goa7.png",
+          "mockupURLs": [
+            {
+              "imageURL": "https://storage.googleapis.com/2hglobalstore/upload/2025/05/30114441.il794xn-6896960984goa7.png",
+              "isPrimary": false
+            },
+            {
+              "imageURL": "https://storage.googleapis.com/2hglobalstore/upload/2025/05/30114442.il794xn-692109758988gg.png",
+              "isPrimary": false
+            },
+            {
+              "imageURL": "https://storage.googleapis.com/2hglobalstore/upload/2025/05/30114442.il794xn-6921097593k75y.png",
+              "isPrimary": false
+            }
+          ],
+          "quantity": 99
+        },
+        {
+          "id": "9461ded6-79d6-434f-8c73-d9733509d141",
+          "productName":
+          "Clair Obscur Expedition 33 Sweatshirt and Hoodie, Esquie Embroidered Sweatshirt and Hoodie, Expedition 33 Merch, Gift for Gamer3",
+          "description":
+          "<p><strong>\uD83E\uDDE5 Express your personality with our Personalized Hoodies — a cozy blend of comfort, style, and individuality.</strong></p>\n\n  <p>✨ Crafted from premium, soft-touch fabric, these hoodies are designed to keep you warm while showcasing your unique design. Whether you're adding your name, favorite quote, or a meaningful graphic, every hoodie becomes a personal statement.</p>\n\n  <p>\uD83C\uDFA8 Available in a wide range of colors and sizes, they're perfect for casual days, thoughtful gifts, or commemorating special occasions. Make every moment warmer and more memorable with a hoodie that's made just for you.</p>\n\n  <p><strong>\uD83D\uDCA1 Your story, your design — wear it your way.</strong></p>",
+          "regularPrice": 42.34,
+          "salePrice": 39.88,
+          "productCategory": "Sweater",
+          "productTags": "Sweater, Winter Collection",
+          "mainMockupURL":
+          "https://storage.googleapis.com/2hglobalstore/upload/2025/05/30114317.il794xn-6940901461jtji.png",
+          "mockupURLs": [
+            {
+              "imageURL": "https://storage.googleapis.com/2hglobalstore/upload/2025/05/30114317.il794xn-6940901461jtji.png",
+              "isPrimary": false
+            },
+            {
+              "imageURL": "https://storage.googleapis.com/2hglobalstore/upload/2025/05/30114322.il794xn-6940901497sfdl.png",
+              "isPrimary": false
+            },
+            {
+              "imageURL": "https://storage.googleapis.com/2hglobalstore/upload/2025/05/30114322.il794xn-69409014993pic.png",
+              "isPrimary": false
+            }
+          ],
+          "quantity": 99
+        },
+        {
+          "id": "47e5fb6e-0a6f-4a49-9d79-05cb9a1207d8",
+          "productName":
+          "Clair Obscur Expedition 33 Sweatshirt and Hoodie, Esquie Embroidered Sweatshirt and Hoodie, Expedition 33 Merch, Gift for Gamer2",
+          "description":
+          "<p><strong>\uD83E\uDDE5 Express your personality with our Personalized Hoodies — a cozy blend of comfort, style, and individuality.</strong></p>\n\n  <p>✨ Crafted from premium, soft-touch fabric, these hoodies are designed to keep you warm while showcasing your unique design. Whether you're adding your name, favorite quote, or a meaningful graphic, every hoodie becomes a personal statement.</p>\n\n  <p>\uD83C\uDFA8 Available in a wide range of colors and sizes, they're perfect for casual days, thoughtful gifts, or commemorating special occasions. Make every moment warmer and more memorable with a hoodie that's made just for you.</p>\n\n  <p><strong>\uD83D\uDCA1 Your story, your design — wear it your way.</strong></p>",
+          "regularPrice": 42.34,
+          "salePrice": 39.88,
+          "productCategory": "Sweater",
+          "productTags": "Sweater, Winter Collection",
+          "mainMockupURL":
+          "https://storage.googleapis.com/2hglobalstore/upload/2025/05/30114227.il794xn-6892934682sgqh.png",
+          "mockupURLs": [
+            {
+              "imageURL": "https://storage.googleapis.com/2hglobalstore/upload/2025/05/30114227.il794xn-6892934682sgqh.png",
+              "isPrimary": false
+            },
+            {
+              "imageURL": "https://storage.googleapis.com/2hglobalstore/upload/2025/05/30114235.il794xn-6892934942dn9x.png",
+              "isPrimary": false
+            },
+            {
+              "imageURL": "https://storage.googleapis.com/2hglobalstore/upload/2025/05/30114234.il794xn-69409107353tcv.png",
+              "isPrimary": false
+            }
+          ],
+          "quantity": 99
+        },
+        {
+          "id": "2e8fc37d-2692-4ae1-8a53-3b7956adce53",
+          "productName":
+          "Clair Obscur Expedition 33 Sweatshirt and Hoodie, Esquie Embroidered Sweatshirt and Hoodie, Expedition 33 Merch, Gift for Gamer1",
+          "description":
+          "<p><strong>\uD83E\uDDE5 Express your personality with our Personalized Hoodies — a cozy blend of comfort, style, and individuality.</strong></p>\n\n  <p>✨ Crafted from premium, soft-touch fabric, these hoodies are designed to keep you warm while showcasing your unique design. Whether you're adding your name, favorite quote, or a meaningful graphic, every hoodie becomes a personal statement.</p>\n\n  <p>\uD83C\uDFA8 Available in a wide range of colors and sizes, they're perfect for casual days, thoughtful gifts, or commemorating special occasions. Make every moment warmer and more memorable with a hoodie that's made just for you.</p>\n\n  <p><strong>\uD83D\uDCA1 Your story, your design — wear it your way.</strong></p>",
+          "regularPrice": 42.34,
+          "salePrice": 39.88,
+          "productCategory": "Sweater",
+          "productTags": "Sweater, Winter Collection",
+          "mainMockupURL":
+          "https://storage.googleapis.com/2hglobalstore/upload/2025/05/30114056.il794xn-6892906360mkbi.png",
+          "mockupURLs": [
+            {
+              "imageURL": "https://storage.googleapis.com/2hglobalstore/upload/2025/05/30114056.il794xn-6892906360mkbi.png",
+              "isPrimary": false
+            },
+            {
+              "imageURL": "https://storage.googleapis.com/2hglobalstore/upload/2025/05/30114054.il794xn-6892906404o4wn.png",
+              "isPrimary": false
+            },
+            {
+              "imageURL": "https://storage.googleapis.com/2hglobalstore/upload/2025/05/30114101.il794xn-69408815156ipb.png",
+              "isPrimary": false
+            },
+            {
+              "imageURL": "https://storage.googleapis.com/2hglobalstore/upload/2025/05/30114101.il794xn-6940881535qctg.png",
+              "isPrimary": false
+            }
+          ],
+          "quantity": 99
+        }
+      ]
     },
     {
       "title": "Cap",
       "slug": "cap",
       "image": "https://storage.googleapis.com/2hglobalstore/upload/2025/06/06173429.cap.jpg",
-      "products": []
+      "products": [
+        {
+          "id": "8332235d-9d90-47ff-b8bd-83ba37056e0a",
+          "productName":
+          "Red Dirt Hat Company Direct Stitch Adjustable Snapback Hat, Trucker Cap w/Ventilated Mesh Back & Snap Back Closure, Structured Baseball Cap for Men & Women",
+          "description": null,
+          "regularPrice": 23.21,
+          "salePrice": 12.90,
+          "productCategory": "Cap",
+          "productTags": "Cap, Black Cap",
+          "mainMockupURL":
+          "https://storage.googleapis.com/2hglobalstore/upload/2025/06/05102900.41bzp-vkc9l.jpg",
+          "mockupURLs": [
+            {
+              "imageURL": "https://storage.googleapis.com/2hglobalstore/upload/2025/06/05102900.41bzp-vkc9l.jpg",
+              "isPrimary": true
+            },
+            {
+              "imageURL": "https://storage.googleapis.com/2hglobalstore/upload/2025/06/05102900.51ehhnm0bjl.jpg",
+              "isPrimary": true
+            },
+            {
+              "imageURL": "https://storage.googleapis.com/2hglobalstore/upload/2025/06/05102859.514eoca-sgl.jpg",
+              "isPrimary": true
+            },
+            {
+              "imageURL": "https://storage.googleapis.com/2hglobalstore/upload/2025/06/05102909.do.jpg",
+              "isPrimary": true
+            }
+          ],
+          "quantity": 99
+        },
+        {
+          "id": "48ad06f1-a69c-4b7c-b08a-6614a14a53d2",
+          "productName":
+          "Lazy J Ranch Wear 'Willow Cattle Headquarters' Unisex Trucker Hat – White & Black 5-Panel High-Profile Snapback Cap with Flat Bill and Breathable Mesh Back",
+          "description": null,
+          "regularPrice": 23.21,
+          "salePrice": null,
+          "productCategory": "Cap",
+          "productTags": "Cap, Black Cap",
+          "mainMockupURL":
+          "https://storage.googleapis.com/2hglobalstore/upload/2025/06/05102056.lazyj1.jpg",
+          "mockupURLs": [
+            {
+              "imageURL": "https://storage.googleapis.com/2hglobalstore/upload/2025/06/05102056.lazyj1.jpg",
+              "isPrimary": true
+            },
+            {
+              "imageURL": "https://storage.googleapis.com/2hglobalstore/upload/2025/06/05102055.lazyj.jpg",
+              "isPrimary": true
+            },
+            {
+              "imageURL": "https://storage.googleapis.com/2hglobalstore/upload/2025/06/05102056.lazyj3.jpg",
+              "isPrimary": true
+            },
+            {
+              "imageURL": "https://storage.googleapis.com/2hglobalstore/upload/2025/06/05102054.lazyj2.jpg",
+              "isPrimary": true
+            }
+          ],
+          "quantity": 99
+        }
+      ]
     },
     {
       "title": "Tote Bag",
       "slug": "tote-bag",
       "image": "https://storage.googleapis.com/2hglobalstore/upload/2025/06/06173457.tote-bag.jpg",
-      "products": []
+      "products": [
+        {
+          "id": "1b42dc5c-d753-451e-b985-1cfd2dc9cd83",
+          "productName":
+          "Lazy J Ranch Wear 'Willow Cattle Headquarters' Unisex Trucker Hat – White & Black 5-Panel High-Profile Snapback Cap with Flat Bill and Breathable Mesh Back",
+          "description": null,
+          "regularPrice": 15.21,
+          "salePrice": null,
+          "productCategory": "Tote Bag",
+          "productTags": "Tote bag, Canvas, Bag",
+          "mainMockupURL":
+          "https://storage.googleapis.com/2hglobalstore/temporary/2025/05/15111023.555846.jpg",
+          "mockupURLs": [
+            {
+              "imageURL": "https://storage.googleapis.com/2hglobalstore/temporary/2025/05/15111023.555846.jpg",
+              "isPrimary": false
+            },
+            {
+              "imageURL": "https://storage.googleapis.com/2hglobalstore/temporary/2025/05/15111023.793692.jpg",
+              "isPrimary": false
+            },
+            {
+              "imageURL": "https://storage.googleapis.com/2hglobalstore/temporary/2025/05/15111023.503687.jpg",
+              "isPrimary": false
+            },
+            {
+              "imageURL": "https://storage.googleapis.com/2hglobalstore/temporary/2025/05/15111023.619187.jpg",
+              "isPrimary": false
+            }
+          ],
+          "quantity": 99
+        },
+        {
+          "id": "b8c45ecb-b786-4a41-b870-91e89cb22319",
+          "productName":
+          "Orange Cat Japanese Print PNG Authentic Mandarin Orange Tree Design Gift for Cat Lovers Eco Friendly Tote Cotton Canvas Bag Design",
+          "description": null,
+          "regularPrice": 17.21,
+          "salePrice": null,
+          "productCategory": "Tote Bag",
+          "productTags": "Tote bag, Canvas, Bag",
+          "mainMockupURL":
+          "https://storage.googleapis.com/2hglobalstore/temporary/2025/05/15110011.325385.jpg",
+          "mockupURLs": [
+            {
+              "imageURL": "https://storage.googleapis.com/2hglobalstore/temporary/2025/05/15110011.325385.jpg",
+              "isPrimary": false
+            },
+            {
+              "imageURL": "https://storage.googleapis.com/2hglobalstore/temporary/2025/05/15110011.872755.jpg",
+              "isPrimary": false
+            },
+            {
+              "imageURL": "https://storage.googleapis.com/2hglobalstore/temporary/2025/05/15110011.246354.jpg",
+              "isPrimary": false
+            },
+            {
+              "imageURL": "https://storage.googleapis.com/2hglobalstore/temporary/2025/05/15110011.251655.jpg",
+              "isPrimary": false
+            },
+            {
+              "imageURL": "https://storage.googleapis.com/2hglobalstore/temporary/2025/05/15110012.393590.jpg",
+              "isPrimary": false
+            }
+          ],
+          "quantity": 99
+        }
+      ]
     },
     {
       "title": "Light Lamp",

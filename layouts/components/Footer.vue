@@ -43,7 +43,7 @@ const { title, contact, header } = appConfig;
         </VCol>
 
         <VCol cols="12" sm="6" md="6" lg="auto">
-          <h3 class="mb-3">Categories</h3>
+          <h3 class="mb-3">Our Company</h3>
           <ul class="list-none">
             <li class="py-2">
               <VIcon icon="ri-arrow-drop-right-line"></VIcon>
@@ -67,13 +67,13 @@ const { title, contact, header } = appConfig;
 
             <li class="py-2">
               <VIcon icon="ri-arrow-drop-right-line"></VIcon>
-              <NuxtLink to="/blogs">Blogs</NuxtLink>
+              <NuxtLink to="/blog">Blog</NuxtLink>
             </li>
           </ul>
         </VCol>
 
         <VCol cols="12" sm="6" md="6" lg="auto">
-          <h3 class="mb-3">Our Company</h3>
+          <h3 class="mb-3">Categories</h3>
           <ul class="list-none">
             <li class="py-2" v-for="category in header.menu.shop">
               <VIcon icon="ri-arrow-drop-right-line"></VIcon>

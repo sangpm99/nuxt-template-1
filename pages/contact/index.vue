@@ -13,10 +13,12 @@ const { contact } = appConfig;
       <a :href="`mailto:${contact.email.value}`">{{ contact.email.label }}</a>
     </p>
 
-    <VTextField label="Your Email *"></VTextField>
-    <VTextField label="Your Name *"></VTextField>
-    <VTextField label="Your Phone Number"></VTextField>
-    <VTextarea label="Your Description" counter="500"></VTextarea>
+    <div class="d-flex flex-column ga-5">
+      <VTextField label="Your Email *"></VTextField>
+      <VTextField label="Your Name *"></VTextField>
+      <VTextField label="Your Phone Number"></VTextField>
+      <VTextarea label="Your Description" counter="500"></VTextarea>
+    </div>
 
     <VBtn>Send</VBtn>
   </div>

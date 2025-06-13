@@ -18,8 +18,8 @@ const getNavItems: Navbar[] = [
     public: true,
   },
   {
-    title: "Blogs",
-    to: "/blogs",
+    title: "Blog",
+    to: "/blog",
     public: true,
   },
   {
