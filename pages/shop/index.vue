@@ -3,7 +3,9 @@ const appConfig = useAppConfig();
 
 import type { Product } from "@/types/product";
 
-import ProductCard from "~/components/ProductCard.vue";
+import ProductCard from "@/components/ProductCard.vue";
+import ShopSideBar from "@/views/pages/shop/ShopSideBar/ShopSideBar.vue";
+import ShopSideBarDrawer from "~/views/pages/shop/ShopSideBar/ShopSideBarDrawer.vue";
 
 const { categories } = appConfig;
 const allProducts: Product[] = categories
@@ -11,7 +13,8 @@ const allProducts: Product[] = categories
   .flat(1);
 
 const router = useRouter();
-const tabIndex = ref<string | number>(0);
+const tabIndex = ref<string>("0");
+const isDrawerOpen = ref<boolean>(false);
 
 const onNavigateToProduct = (id: string) => {
   router.push("/product/" + id);
@@ -21,69 +24,24 @@ const onNavigateToProduct = (id: string) => {
 <template>
   <div class="layout-wrapper py-10">
     <VRow>
-      <VCol cols="3" class="position-relative">
-        <VCard class="position-sticky" style="top: 0">
-          <VCardText>
-            <VRow dense>
-              <VCol cols="12" class="d-flex flex-column ga-3">
-                <h3 class="py-2 border-b-primary">Search</h3>
-                <div class="d-flex align-center ga-3">
-                  <VTextField placeholder="Hoodie, Shirt, ..."></VTextField>
-                  <VBtn
-                    icon="ri-search-line"
-                    class="rounded"
-                    size="small"
-                  ></VBtn>
-                </div>
-              </VCol>
-
-              <VCol cols="12">
-                <h3 class="py-2 border-b-primary">Category</h3>
-                <VList class="pa-0" v-model:selected="tabIndex">
-                  <VListItem
-                    :key="0"
-                    class="pa-0"
-                    :class="tabIndex === 0 ? 'bg-primary' : ''"
-                    min-height="30"
-                    @click="tabIndex = 0"
-                  >
-                    All Products
-                  </VListItem>
-
-                  <VListItem
-                    v-for="(category, index) in categories"
-                    :key="index + 1"
-                    class="pa-0"
-                    :class="tabIndex === category.slug ? 'bg-primary' : ''"
-                    min-height="30"
-                    @click="tabIndex = category.slug"
-                  >
-                    {{ category.title }}
-                  </VListItem>
-                </VList>
-              </VCol>
-
-              <VCol cols="12" class="d-flex flex-column ga-3">
-                <h3 class="py-2 border-b-primary">Price</h3>
-                <div class="d-flex ga-4">
-                  <VTextField label="From" type="number" min="0"></VTextField>
-                  <VTextField label="To" type="number" min="0"></VTextField>
-                </div>
-                <VBtn>Apply</VBtn>
-              </VCol>
-            </VRow>
-          </VCardText>
-        </VCard>
+      <VCol cols="12" class="d-block d-md-none">
+        <ShopSideBarDrawer
+          v-model:tab-index="tabIndex"
+          v-model:is-drawer-open="isDrawerOpen"
+        ></ShopSideBarDrawer>
       </VCol>
 
-      <VCol cols="9">
+      <VCol cols="3" class="d-none d-md-block position-relative">
+        <ShopSideBar v-model:tab-index="tabIndex"></ShopSideBar>
+      </VCol>
+      <VCol cols="12" md="9">
         <VTabsWindow v-model="tabIndex" class="disable-tab-transition">
           <VTabsWindowItem :value="0">
             <VRow>
               <VCol
                 cols="12"
                 sm="6"
-                md="3"
+                lg="3"
                 v-for="(product, index) in allProducts"
                 :key="index"
               >

@@ -3,6 +3,7 @@ import Navbar from "@/layouts/components/Navbar.vue";
 import Footer from "@/layouts/components/Footer.vue";
 
 import MenuMobileDrawer from "@/layouts/components/MenuMobileDrawer.vue";
+import ScrollToTop from "@/layouts/components/ScrollToTop.vue";
 
 const isDrawerOpen = ref<boolean>(false);
 </script>
@@ -26,5 +27,7 @@ const isDrawerOpen = ref<boolean>(false);
         v-model:is-drawer-open="isDrawerOpen"
       ></MenuMobileDrawer>
     </ClientOnly>
+
+    <ScrollToTop></ScrollToTop>
   </div>
 </template>

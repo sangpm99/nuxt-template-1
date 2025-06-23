@@ -12,17 +12,18 @@
     </p>
 
     <VTextField
-      density="compact"
       label="Order ID"
       placeholder="Found in your order confirmation email."
+      clearable
     ></VTextField>
 
     <VTextField
-      density="compact"
       label="Billing email"
       placeholder="Email you used during checkout"
+      class="mt-3"
+      clearable
     ></VTextField>
 
-    <VBtn>TRACK</VBtn>
+    <VBtn class="mt-3">TRACK</VBtn>
   </div>
 </template>
