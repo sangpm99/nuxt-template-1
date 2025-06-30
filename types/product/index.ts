@@ -15,3 +15,17 @@ export interface mockupURL {
   imageURL: string;
   isPrimary: boolean;
 }
+
+export interface SearchQuery {
+  searchValue: string;
+  price: Price;
+  category: string;
+  sort: string;
+  pageIndex: number;
+  pageSize: number;
+}
+
+export interface Price {
+  min: number;
+  max: number;
+}

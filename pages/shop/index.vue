@@ -1,24 +1,92 @@
 <script setup lang="ts">
 const appConfig = useAppConfig();
+import { convertToNumber } from "@/utils/formatters";
 
+import { useProductStore } from "@/stores/product";
 import type { Product } from "@/types/product";
 
 import ProductCard from "@/components/ProductCard.vue";
 import ShopSideBar from "@/views/pages/shop/ShopSideBar/ShopSideBar.vue";
-import ShopSideBarDrawer from "~/views/pages/shop/ShopSideBar/ShopSideBarDrawer.vue";
+import ShopSideBarDrawer from "@/views/pages/shop/ShopSideBar/ShopSideBarDrawer.vue";
 
 const { categories } = appConfig;
+const productStore = useProductStore();
+const { filter } = storeToRefs(productStore);
 const allProducts: Product[] = categories
   .map((category) => category.products.map((product) => product as Product))
   .flat(1);
 
 const router = useRouter();
+const route = useRoute();
 const tabIndex = ref<string>("0");
 const isDrawerOpen = ref<boolean>(false);
+const sortBy: string[] = [
+  "default",
+  "popularity",
+  "averageRating",
+  "latest",
+  "priceLowToHigh",
+  "priceHighToLow",
+];
 
 const onNavigateToProduct = (id: string) => {
   router.push("/product/" + id);
 };
+
+const setupFiltersFromRoute = () => {
+  if (route.query?.searchValue) {
+    filter.value = {
+      ...filter.value,
+      searchValue: route.query.searchValue as string,
+    };
+  }
+  if (route.query?.["price[min]"]) {
+    filter.value = {
+      ...filter.value,
+      price: {
+        ...(filter.value?.price ?? {}),
+        min: convertToNumber(route.query["price[min]"]),
+      },
+    };
+  }
+  if (route.query?.["price[max]"]) {
+    filter.value = {
+      ...filter.value,
+      price: {
+        ...(filter.value?.price ?? {}),
+        max: convertToNumber(route.query["price[max]"]),
+      },
+    };
+  }
+  if (route.query?.category) {
+    filter.value = {
+      ...filter.value,
+      category: route.query.category as string,
+    };
+  }
+  if (route.query?.sort) {
+    filter.value = {
+      ...filter.value,
+      sort: route.query.sort as string,
+    };
+  }
+  if (route.query?.pageIndex) {
+    filter.value = {
+      ...filter.value,
+      pageIndex: convertToNumber(route.query.pageIndex),
+    };
+  }
+  if (route.query?.pageSize) {
+    filter.value = {
+      ...filter.value,
+      pageSize: convertToNumber(route.query.pageSize),
+    };
+  }
+};
+
+onMounted(() => {
+  setupFiltersFromRoute();
+});
 </script>
 
 <template>

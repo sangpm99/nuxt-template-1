@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { PerfectScrollbar } from "vue3-perfect-scrollbar";
 
-import ShopSideBarFilter from "~/views/pages/shop/ShopSideBar/ShopSideBarFilter.vue";
-import AppDrawerHeaderSection from "~/components/AppDrawerHeaderSection.vue";
+import ShopSideBarFilter from "@/views/pages/shop/ShopSideBar/ShopSideBarFilter.vue";
+import AppDrawerHeaderSection from "@/components/AppDrawerHeaderSection.vue";
 
 interface Props {
   isDrawerOpen: boolean;
@@ -18,14 +18,6 @@ const emit = defineEmits<Emit>();
 const handleDrawerModelValueUpdate = (value: boolean) => {
   emit("update:isDrawerOpen", value);
 };
-
-watch(
-  () => props.isDrawerOpen,
-  () => {
-    if (props.isDrawerOpen) {
-    }
-  }
-);
 </script>
 
 <template>

@@ -1,4 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { defineNuxtConfig } from "nuxt/config";
 import vuetify, { transformAssetUrls } from "vite-plugin-vuetify";
 
 export default defineNuxtConfig({
@@ -21,7 +22,11 @@ export default defineNuxtConfig({
         config.plugins.push(vuetify({ autoImport: true }));
       });
     },
+    "@pinia/nuxt",
   ],
+  pinia: {
+    storesDirs: ["./stores/**", "./custom-folder/stores/**"],
+  },
   vite: {
     vue: {
       template: {

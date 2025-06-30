@@ -1,6 +1,8 @@
 <script setup lang="ts">
 const appConfig = useAppConfig();
 
+import { useProductStore } from "@/stores/product";
+
 interface Props {
   tabIndex: string;
 }
@@ -10,6 +12,8 @@ interface Emit {
   (e: "update:isDrawerOpen", value: boolean): void;
 }
 const emit = defineEmits<Emit>();
+const productStore = useProductStore();
+const { filter } = storeToRefs(productStore);
 const tabIndex = ref<string>(JSON.parse(JSON.stringify(props.tabIndex)));
 const { categories } = appConfig;
 
@@ -35,7 +39,11 @@ watch(
     <VCol cols="12" class="d-flex flex-column ga-3">
       <h3 class="py-2 border-b-primary">Search</h3>
       <div class="d-flex align-center ga-3">
-        <VTextField placeholder="Hoodie, Shirt, ..." clearable></VTextField>
+        <VTextField
+          placeholder="Hoodie, Shirt, ..."
+          clearable
+          v-model="filter.searchValue"
+        ></VTextField>
         <VBtn
           icon="ri-search-line"
           class="rounded"
@@ -72,8 +80,18 @@ watch(
     <VCol cols="12" class="d-flex flex-column ga-3">
       <h3 class="py-2 border-b-primary">Price</h3>
       <div class="d-flex ga-4">
-        <VTextField label="From" type="number" min="0"></VTextField>
-        <VTextField label="To" type="number" min="0"></VTextField>
+        <VTextField
+          label="From"
+          type="number"
+          min="0"
+          v-model="filter.price.min"
+        ></VTextField>
+        <VTextField
+          label="To"
+          type="number"
+          min="0"
+          v-model="filter.price.max"
+        ></VTextField>
       </div>
       <VBtn @click="handleSearch">Apply</VBtn>
     </VCol>
